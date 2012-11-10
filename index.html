@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Example Dreamweaver Mobile App</title>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jq.css" rel="stylesheet" type="text/css">
+<!-- Phone -->
+<link href="./mediaquery/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)">
+<!-- Tablet -->
+<link href="./mediaquery/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)">
+<!-- Desktop -->
+<link href="./mediaquery/desk.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div data-role="page" id="page" data-theme="a">
+    <div data-role="header">
+        <h1>Welcome to a  Demo</h1>
+    </div>
+    <!-- / header -->
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a href="#page2">Introduction</a></li>
+            <li><a href="#page3">Examples</a></li>
+            <li><a href="#page4">Future</a></li>
+            <li><a href="#page5">Features</a></li>
+        </ul>
+        <div data-role="fieldcontain">
+            <label for="slider2">Style:</label>
+            <input type="range" name="slider2" id="slider2" value="0" min="1" max="4"/>
+        </div>
+     </div><!-- / content -->
+    <div data-role="footer">
+        <h4><a data-direction="reverse">Back</a></h4>
+    </div>
+    <!-- / footer --> 
+</div>
+<!-- / page -->
+
+<div data-role="page" id="page2" data-theme="b">
+    <div data-role="header">
+        <h1>Introduction</h1>
+    </div>
+    <div data-role="content">
+        <div id="vanishdiv" style="float:left"> <img src="images/Vanishing42_11-146x300.jpg" alt="Vanish" name="vanish" width="146" height="300" id="vanish"> </div>
+        <p>I'm Kurt, and I have been working on games, websites and cool ideas for about seventeen years now. Alternate Reality, boutique Flash sites for the world's top music artists, multimedia for top hardware manufacturers, plus tons of e-commerce and content management work for everyone from Creative Labs to two man companies out to change the world from home with Wordpress and their ideas. Use my experience and enthusiasm to make your project the best it can be!</p>
+        <p>&nbsp;</p>
+        <div id="muvodiv" style="float:right"><img src="images/muvoColor-300x225.jpg" width="300" height="225" alt="Muvo"></div>
+        <p>I put this together in about five minutes, pretty much by hand, so don't expect too much. But it does give you an idea what this should work like.</p>
+        <p  style="clear:both"><cite>(Image from Vanishing Point, done with 42 Entertainment for the launch of Windows Vista. www.vanishingpointgame.com)</cite></p>
+    </div>
+    <div data-role="footer" data-id="mainfooter">
+        <h4><a data-rel="back">Back to Top</a></h4>
+    </div>
+</div>
+
+<div id="page3" data-role="page" data-theme="c">
+    <div data-role="header">
+        <h1>Skills and Platforms</h1>
+    </div>
+    <div data-role="content">
+        <ul>
+            <li>Development Platforms: LAMP, .NET, Flash / Flex</li>
+            <li>Skilled in: Object oriented PHP, Javascript, Actionscript 2., HTML, XML, CSS, VXML, MySql, MS SQL Server</li>
+            <li>Working Knowledge of / familiar with: jQuery, HTML5/CSS3, Objective-C, C#, Actionscript 3, Javascript libraries (moo tools, prototype, etc), memcached</li>
+            <li>Content and Design Tools: Photoshop, Illustrator, Flash, After Effects and Premiere.&nbsp; </li>
+            <li>Experience with: Source Control, Web Services, SCRUM, SEO, Wordpress, Typo3, Zencart, Templating (SMARTY), CodeIgniter</li>
+            <li>OS Platforms: UNIX / Linux, MacOS, Windows</li>
+        </ul>
+    </div>
+    <div data-role="footer">
+        <h4><a data-rel="back">Back to Top</a></h4>
+    </div>
+</div>
+
+<!-- *** Page 4 *** -->
+<div id="page4" data-role="page" data-theme="d">
+    <div data-role="header">
+        <h1>Available Services</h1>
+    </div>
+    <div data-role="content">
+        <ul>
+            <li> Custom	and	off the shelf web site solutions for your business </li>
+            <li>E-commerce solutions, backed by Authorize.Net or your preferred financial network</li>
+            <li>E-mail marketing campaigns</li>
+            <li>Site analytics, link trends and sales to your marketing campaigns</li>
+            <li>Web hosting</li>
+            <li>Search engine optimization</li>
+        </ul>
+    </div>
+    <div data-role="footer">
+        <h4><a data-rel="back">Back to Top</a></h4>
+    </div><!-- / footer -->
+</div><!-- / page 4 -->
+    
+    <!-- *** Page 5 *** -->
+    <div data-role="page" id="page5" data-theme="e">
+    <div data-role="header">
+        <h1>More Coolness</h1>
+    </div><!-- / header -->
+    <!-- / header -->
+    <div data-role="content">
+        <p>I Love Bees</p>
+        <div data-role="fieldcontain">
+            <label for="slider3">Style:</label>
+            <input type="range" name="slider3" id="slider3" value="50" min="1" max="100"/>
+        </div><!-- / slider3 -->
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>Header</h3>
+                <p>Content</p>
+            </div>
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>Header</h3>
+                <p>Content</p>
+            </div>
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>Header</h3>
+                <p>Content</p>
+            </div>
+        </div>
+       
+     </div><!-- / content -->
+     <div data-role="footer">
+        <h4><a data-rel="back">Back to Top</a></h4>
+    </div><!-- / footer -->
+</div><!-- / page 5 -->
+</body>
+</html>
